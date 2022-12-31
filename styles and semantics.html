@@ -1,0 +1,124 @@
+<!-- A semantic element clearly describes its meaning to both the browser and the developer.
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+Semantic Elements in HTML
+Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer. 
+    The <style> tag is used to define style information (CSS) for a document.
+Inside the <style> element you specify how HTML elements should render in a browser.-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styles & semantics</title>
+</head>
+    <style>
+        *{
+background-color: antiquewhite;
+        }
+        h3 {
+            color: red;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .myDiv {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+
+<body>
+    <h2>The Style element</h2>
+    <h3>This is a heading</h3>
+    <p>This is a paragraph.</p>
+    <h2>The div element</h2>
+    <div class="myDiv">
+        <h2>This is a heading in a div element</h2>
+        <p>This is some text in a div element.</p>
+    </div>
+    <p>This is some text outside the div element.</p>
+    <!-- The <span> tag is an inline container used to mark up a part of a text, or a part of a document.-->
+    <h2>The span element</h2>
+    <p><p>puthin <span style="color:blue;font-weight:bold">is responsible for </span>the war</p>
+    <!-- The <header> element represents a container for introductory content or a set of navigational links.
+A <header> element typically contains:
+one or more heading elements (<h1> - <h6>)
+logo or icon
+authorship information -->
+    <article>
+        <header>
+            <h2>A heading here</h2>
+            <p>Posted by John Doe</p>
+            <p>Some additional information here</p>
+        </header>
+        <p>Lorem Ipsum dolor set amet....</p>
+    </article>
+    <!-- The <footer> tag defines a footer for a document or section.
+A <footer> element typically contains:
+authorship information
+copyright information
+contact information
+sitemap
+back to top links
+related documents
+You can have several <footer> elements in one document. -->
+    <h2>The footer element</h2>
+    <footer>
+        <p>Author: Hege Refsnes<br>
+            <a href="mailto:shaiknayum02@gmail.com">shaiknayum02@gmail.com</a>
+        </p>
+    </footer>
+    <!-- The <main> tag specifies the main content of a document.
+The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search form -->
+    <h1>The main element</h1>
+    <main>
+        <h1>Most Popular Browsers</h1>
+        <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular
+                web browser today!</p>
+        </article>
+        <article>
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most
+                popular web browser since January, 2018.</p>
+        </article>
+        <article>
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced
+                Internet Explorer.</p>
+        </article>
+        <h2>The section element</h2>
+
+        <section>
+            <h3>WWF History</h3>
+            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+                conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF
+                was founded in 1961.</p>
+        </section>
+
+        <section>
+            <h3>WWF's Symbol</h3>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named
+                Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the
+                establishment of WWF.</p>
+        </section>
+        <!-- The <details> tag specifies additional details that the user can open and close on demand. -->
+        <h2>The details element</h2>
+
+        <details>
+            <summary>Epcot Center</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
+                pavilions, award-winning fireworks and seasonal special events.</p>
+        </details>
+    </main>
+</body>
+
+</html>

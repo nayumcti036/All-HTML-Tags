@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables & lists Tags</title>
+    </head>
+
+    <center>
+        <h1>Tables</h1>
+    </center>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+<body>
+
+    <h1>The table element</h1>
+
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+    </table>
+    <h1>The col element</h1>
+
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:rgb(154, 202, 241)">
+            <col style="background-color:rgb(56, 214, 235)">
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML</td>
+            <td>$53</td>
+        </tr>
+        <tr>
+            <td>5869207</td>
+            <td>My first CSS</td>
+            <td>$49</td>
+        </tr>
+    </table>
+    <hr>
+    <center>
+        <h1>Lists</h1>
+    </center>
+    <h1>The ul element</h1>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <h1>The ol element</h1>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <!-- The <dl> tag defines a description list.
+        The <dt> tag defines a term/name in a description list.
+The <dt> tag is used in conjunction with <dl> (defines a description list) and <dd> (describes each term/name). 
+    The <dd> tag is used to describe a term/name in a description list.
+The <dd> tag is used in conjunction with <dl> (defines a description list) and <dt> (defines terms/names).
+Inside a <dd> tag you can put paragraphs, line breaks, images, links, lists, etc.-->
+    <h1>The dl, dd, and dt elements</h1>
+
+    <p>These three elements are used to create a description list:</p>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+</body>
+
+</html>

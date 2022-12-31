@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All HTML Tags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <center><b>
+                <h1>All HTML Tags</h1>
+            </b></center>
+        <div class="nav">
+            <a href="Basic html tag.html">Basic HTML Tag</a>
+            <a href="forms & input tags.html">Forms and Input Tags</a>
+            <a href="frame tag.html">Frame Tag</a>
+            <a href="image tag.html">Images Tag</a>
+            <a href="tables & lists tag.html">HTML Tables & List</a>
+            <a href="styles and semantics.html">Styles & Semantics Tags</a>
+        </div>
+    </header>
+    <br>
+    <h2>About HTML</h2>
+    <p>The HyperText Markup Language or HTML is<b>the standard markup language for documents designed to be displayed in
+            a web browser</b>. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting
+        languages such as JavaScript.</p>
+    <br>
+    <center><u>
+            <h1>Formatting Tags</h1>
+        </u></center>
+    <h2>The abbr element</h2>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p><br>
+    <h2>The address element</h2>
+    <address>
+        <!-- The <address> tag defines the contact information for the author/owner of a document or an article.
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+
+ -->
+        Written by <a href="mailto:shaiknayum02" gmail.com">Nayum</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <h2>The b element</h2>
+
+    <p>This is normal text - <b>and this is bold text</b>.</p>
+    <!-- BDI stands for Bi-Directional Isolation.
+The <bdi> tag isolates a part of text that might be formatted in a different direction from other text outside it.
+This element is useful when embedding user-generated content with an unknown text direction.
+-->
+    <h2>The bdi element</h2>
+
+    <p>In the example below, usernames are shown along with the number of points in a contest. If the bdi element is not
+        supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm
+        would put the colon and the number "90" next to the word "User" rather than next to the word "points").</p>
+
+    <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <!-- BDO stands for Bi-Directional Override.
+The <bdo> tag is used to override the current text direction.
+ -->
+    <h2>The bdo element</h2>
+
+    <p>This paragraph will go left-to-right.</p>
+    <p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>
+    <!-- The <del> tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.
+ -->
+    <h2>The del element</h2>
+    <p>My favorite color is <del>red</del> <ins>sky blue</ins>!</p>
+    <h2>The dfn element</h2>
+    <!-- The <dfn> tag stands for the "definition element", and it specifies a term that is going to be defined within the content.
+The nearest parent of the <dfn> tag must also contain the definition/explanation for the term. -->
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+    <h2>The em element</h2>
+    <!-- he <em> tag is used to define emphasized text. The content inside is typically displayed in italic.
+A screen reader will pronounce the words in <em> with an emphasis, using verbal stress. -->
+    <p>You <em>have</em> to hurry up!</p>
+    <p>We <em>cannot</em> live like this.</p>
+    <h2>The i element</h2>
+    <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+    <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+    <h2>The u element</h2>
+    <p>This is some <u>mispeled</u> text.</p>
+    <h2>The pre element</h2>
+    <!-- The <pre> tag defines preformatted text.
+Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code. -->
+    <pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+    <h2>The progress element</h2>
+    <!-- The <progress> tag represents the completion progress of a task -->
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="38" max="100"> 38% </progress>
+    <h2>The q element</h2>
+    <!-- The <q> tag defines a short quotation.
+Browsers normally insert quotation marks around the quotation. -->
+    <p>WWF's goal is to:
+        <q>Build a future where people live in harmony with nature.</q>
+        We hope they succeed.
+    </p>
+    <h2>The small element</h2>
+    <p>This is some normal text.</p>
+    <p><small>This is some smaller text.</small></p>
+    <h2>The strong element</h2>
+    <!-- The <strong> tag is used to define text with strong importance. The content inside is typically displayed in bold. -->
+    <p>This text is normal.</p>
+    <p><strong>This text is important!</strong></p>
+    <h2>The sub and sup elements</h2>
+    <!-- The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O. -->
+    <!-- The <sup> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]. -->
+    <p>CO<sub>2</sub></p>
+    <p>ax<sup>2</sup>bx+c</p>
+    <h2>The cite element</h2>
+    <!-- The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+Note: A person's name is not the title of a work.
+The text in the <cite> element usually renders in italic. -->
+    <img src="images/img.jpg" width="220" height="277" alt="The Scream">
+    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+    <h2>The template Element</h2>
+    <!-- The <template> tag is used as a container to hold some HTML content hidden from the user when the page loads.
+The content inside <template> can be rendered later with a JavaScript.
+You can use the <template> tag if you have some HTML code you want to use over and over again, but not until you ask for it. To do this without the <template> tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code. -->
+    <p>Click the button below to display the hidden content from the template element.</p>
+    <button onclick="showContent()">Show hidden content</button>
+    <template>
+        <h3>Flower</h3>
+        <img src="images/img_flower.jpg" width="214" height="204">
+    </template>
+    <!-- java script -->
+    <script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+    </script>
+    <hr>
+    <center>
+        <h1>Character Entities</h1>
+    </center>
+    <!-- Character Entities  Used to display the symbols on the webpage using entity name or number-->
+    <table border="1" padding="3">
+        <tr>
+            <td>&nbsp;</td>
+            <td>Non breaking space</td>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td>Less Than</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>Greater than</td>
+        </tr>
+        <tr>
+            <td>&amp;</td>
+            <td>Ampersand</td>
+        </tr>
+        <tr>
+            <td>&quot;</td>
+            <td>Double-Quotations</td>
+        </tr>
+        <tr>
+            <td>&apos;</td>
+            <td>Single-Quotation</td>
+        </tr>
+        <tr>
+            <td>&cent;</td>
+            <td>Cent</td>
+        </tr>
+        <tr>
+            <td>&pound;</td>
+            <td>Pound</td>
+        </tr>
+        <tr>
+            <td>&yen;</td>
+            <td>Yen</td>
+        </tr>
+        <tr>
+            <td>&euro;</td>
+            <td>Euro</td>
+        </tr>
+
+        <tr>
+            <td>&copy;</td>
+            <td>Copyright</td>
+        </tr>
+        <tr>
+            <td>&reg;</td>
+            <td>Registerd</td>
+        </tr>
+        <tr>
+            <td>&forall;</td>
+            <td>For all</td>
+        </tr>
+        <tr>
+            <td>&part;</td>
+            <td>partial difference</td>
+        </tr>
+        <tr>
+            <td>&exist;</td>
+            <td>There Exists</td>
+        </tr>
+        <tr>
+            <td>&empty;</td>
+            <td>Empty Sets</td>
+        </tr>
+        <tr>
+            <td>&nabla;</td>
+            <td>Nabla</td>
+        </tr>
+        <tr>
+            <td>&isin;</td>
+            <td>Element of</td>
+        </tr>
+        <tr>
+            <td>&notin;</td>
+            <td>not element of</td>
+        </tr>
+        <tr>
+            <td>&ni;</td>
+            <td>Contains As Member</td>
+        </tr>
+        <tr>
+            <td>&prod;</td>
+            <td>Product</td>
+        </tr>
+        <tr>
+            <td>&sum;</td>
+            <td>Summation</td>
+        </tr>
+
+
+    </table>
+    <hr>
+    <center>
+        <h1>Audio/Video Tags</h1>
+    </center>
+    <h2>The audio element</h2>
+    <p>Click on the play button to play a sound:</p>
+    <audio controls>
+        <source src="audio/owl-sound.mp3" type="audio/mpeg">
+    </audio>
+    <h2>The video element</h2>
+    <video width="320" height="240" controls>
+        <source src="video/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+    <center>
+        <h1>Links Tags</h1>
+    </center>
+    <h2>The a tag</h2>
+    <a href="https://nayumcti036.github.io/Nayum-Personal-Site/">Visit Nayum-Personnal-Site</a>
+    <!-- The <embed> tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application. -->
+    <h2>The embed element</h2>
+    <embed type="image/jpg" src="images/nature.jpeg" width="300" height="200"><br>
+    <embed type="video/mp4" src="video/movie.mp4" width="320" height="240">
+</body>
+
+</html>
